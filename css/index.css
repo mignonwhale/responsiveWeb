@@ -7,6 +7,11 @@ body {
   margin: 0;
 }
 
+div {
+  padding: 0;
+  margin: 0;
+}
+
 @media only screen and (min-width: 1400px) {
   .menu-grid {
     margin: 0 auto;
@@ -24,6 +29,7 @@ body {
 .menu-container {
   height: 96px;
   display: flex;
+  padding: 0;
 }
 
 .menu-left {
@@ -104,16 +110,19 @@ body {
 .heart-regular,
 .user-solid,
 .magnifying-glass-solid,
-.bars-solid {
+.page-header .bars-solid {
   width: 12px;
   vertical-align: middle;
   padding-bottom: 1px;
 }
 
-.user-solid {
+.page-header .user-solid {
   width: 11px;
 }
 
+/*
+모바일
+*/
 .mobile-header {
   display: none;
 }
@@ -121,9 +130,44 @@ body {
 @media only screen and (max-width: 1024px) {
   .mobile-header {
     display: block;
+    height: 100px;
+  }
+  .menu-grid {
+    width: 768px;
   }
 
   .page-header {
     display: none;
   }
 }
+
+.mobile-header .menu-grid {
+  height: 100%;
+}
+
+
+.mobile-header .menu-right {
+  height: 100%;
+  background-color: red;
+  text-align: right;
+  
+}
+.mobile-header .menu-right-inner {
+  background-color: gray;
+}
+
+.mobile-header .item-text {
+  height: 100%;
+  margin: 0; 
+  font-size: 14px;
+  color: #080808;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mobile-header .bars-solid {
+  background-color: yellow;
+  width: 12px;
+
+} 
+
