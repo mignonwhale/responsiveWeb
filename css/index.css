@@ -1,0 +1,129 @@
+body {
+  font-family: 'Catamaran', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #929292;
+  padding: 0;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1400px) {
+  .menu-grid {
+    margin: 0 auto;
+    width: 1300px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .menu-grid {
+    margin: 0 auto;
+    width: 950px;
+  }
+}
+
+.menu-container {
+  height: 96px;
+  display: flex;
+}
+
+.menu-left {
+  height: 100%;
+  flex: 1 1 0;
+}
+
+.menu-left-inner {
+  width: 80%;
+  height: 100%;
+}
+
+
+.menu-center {
+  height: 100%;
+  display: flex;
+}
+
+.menu-right {
+  height: 100%;
+  flex: 1 1 0;
+}
+
+.menu-right-inner {
+  width: 80%;
+  height: 100%;
+}
+
+.menu-left-nav {
+  height: 100%;
+}
+
+.menu-left-nav>ul {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-right: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-left-nav-item {
+  list-style: none;
+}
+
+.menu-text {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: #080808;
+}
+
+.menu-center-item {
+  margin: auto;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: .2em;
+  color: #080808;
+}
+
+.menu-right-nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 150px;
+}
+
+.item-text-detail {
+  font-size: 12px;
+  font-weight: 400;
+  color: #929292;
+  letter-spacing: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heart-regular,
+.user-solid,
+.magnifying-glass-solid,
+.bars-solid {
+  width: 12px;
+  vertical-align: middle;
+  padding-bottom: 1px;
+}
+
+.user-solid {
+  width: 11px;
+}
+
+.mobile-header {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mobile-header {
+    display: block;
+  }
+
+  .page-header {
+    display: none;
+  }
+}
