@@ -1,3 +1,6 @@
+/*  구글아이콘  */
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
 body {
   font-family: 'Catamaran', sans-serif;
   font-weight: 300;
@@ -8,6 +11,12 @@ body {
 }
 
 div {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -88,15 +97,58 @@ div {
   align-items: center;
 }
 
-.menu-left-nav-item {
-  list-style: none;
-}
-
 .menu-text {
   font-size: 12px;
   font-weight: 700;
   letter-spacing: .1em;
   color: #080808;
+}
+
+.menu-left-drop-down {
+  height: 0px;
+  visibility: hidden;
+  position: absolute;
+  display: block;
+  left: -8px;
+  top: 100%;
+  z-index: 10;
+}
+
+.menu-left-drop-down-inner {
+  height: 100%;
+  position: relative;
+  display: block;
+  padding: 0;
+  margin: 0;
+  z-index: 997;
+}
+
+.menu-left-drop-down ul {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #111;
+  padding: 23px 0 29px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
+.menu-left-nav>ul>li:hover>.menu-left-drop-down {
+  visibility: visible;
+}
+
+.menu-left-drop-down-item {
+  width: 193px;
+  display: block;
+  height: auto;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.item-outer:before {
+  content: "\e5c8";
+  font-family: "Material Icons";
 }
 
 .menu-center-item {
