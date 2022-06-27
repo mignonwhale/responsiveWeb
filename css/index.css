@@ -79,7 +79,7 @@ li {
 
 .menu-right-inner {
   position: relative;
-  width: 80%;
+  width: 62%;
   height: 100%;
 }
 
@@ -97,6 +97,10 @@ li {
   align-items: center;
 }
 
+/* .menu-left-nav>ul li {
+  height: 100%;
+} */
+
 .menu-text {
   font-size: 12px;
   font-weight: 700;
@@ -104,7 +108,35 @@ li {
   color: #080808;
 }
 
+.menu-left-nav>ul>li:hover,
+.menu-right-nav-item:hover {
+  color: #929292;
+}
+
 .menu-left-drop-down {
+  background-color: #111;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.menu-left-drop-down>ul {
+  padding: 20px;
+  width: 194px;
+}
+
+.menu-left-drop-down-item {
+  /* background-color: red; */
+}
+
+.menu-left-nav>ul>li:hover .menu-left-drop-down {
+  display: block;
+}
+
+
+
+
+/* .menu-left-drop-down {
   height: 0px;
   visibility: hidden;
   position: absolute;
@@ -112,11 +144,12 @@ li {
   left: -8px;
   top: 100%;
   z-index: 10;
-}
+} */
 
+/* 
 .menu-left-drop-down-inner {
   height: 100%;
-  position: relative;
+  position: absolute;
   display: block;
   padding: 0;
   margin: 0;
@@ -133,9 +166,9 @@ li {
   font-weight: 400;
 }
 
-
 .menu-left-nav>ul>li:hover>.menu-left-drop-down {
   visibility: visible;
+  cursor: pointer;
 }
 
 .menu-left-drop-down-item {
@@ -149,7 +182,7 @@ li {
 .item-outer:before {
   content: "\e5c8";
   font-family: "Material Icons";
-}
+} */
 
 .menu-center-item {
   margin: auto;
